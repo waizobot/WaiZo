@@ -1,22 +1,20 @@
-const Discord = require('discord.js');
+Your environment has been set up for using Node.js 9.5.0 (x64) and npm.
 
-var bot = new Discord.Client();
-var prefix = ("/");
+C:\Users\Nohlan>cd C:\Users\Nohlan\Desktop\WaiZo
 
-bot.on('ready', ()=>{
-    console.log("Bot Ready !");
-});
+C:\Users\Nohlan\Desktop\WaiZo>cd nodes_modules
 
-bot.login('NDExNTY5MzEzNzIwMzAzNjI4.DV-NpQ.jb4gsSh4dt7pSdP071Z7ehlhfmI');
+C:\Users\Nohlan\Desktop\WaiZo\nodes_modules>npm install discord.js
+npm WARN discord.js@11.3.0 requires a peer of bufferutil@^3.0.3 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of erlpack@discordapp/erlpack but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of node-opus@^0.2.7 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of opusscript@^0.0.6 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of sodium@^2.0.3 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of libsodium-wrappers@^0.5.4 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@11.3.0 requires a peer of uws@^9.14.0 but none is installed. You must install peer dependencies yourself.
+npm WARN waizo@0.0.1 No repository field.
 
-bot.on('message', message => {
-    if (message.content === "ça va WaiZo"){
-        message.reply("oui et toi");
-        console.log('ça va WaiZo oui et toi');
-    }
++ discord.js@11.3.0
+updated 1 package in 18.873s
 
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("voici les commandes du bot :\n -help pour afficher les commandes \n -music pour la musique \n -modération pour les commandes de modérations \n -méteo pour la méteo");
-        console.log("commande help demandée !");
-    }
-});
+C:\Users\Nohlan\Desktop\WaiZo\nodes_modules>
